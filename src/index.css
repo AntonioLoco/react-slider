@@ -1,0 +1,43 @@
+body{
+    background-color: #2c2b2b;
+    color: #f5f5f5;
+}
+
+.card{
+    display: none;
+    max-width: 650px;
+    margin: 10px auto;
+    background-color: #272724;
+    color: #f5f5f5;
+
+}
+
+.card-previous{
+    transform: translateX(-100%);
+    transition: 2s all;
+}
+
+.card-next{
+    transform: translateX(100%);
+    transition: 2s all;
+}
+
+.card.active{
+    display: block;
+    transform: translateX(0);
+    transition: 2s all;
+}
+
+.controller-slider{
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+@keyframes animation-prev{
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
